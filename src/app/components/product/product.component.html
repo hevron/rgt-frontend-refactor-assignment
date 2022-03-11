@@ -1,0 +1,10 @@
+
+<div class="card full">
+  <h1>{{product?.title}}</h1>
+  <img [src]="product?.img" alt="Denim Jeans" class="full">
+  <p>{{product?.desc}}</p>
+  <ng-container *ngIf="product?.price">
+    <p class="price">${{product?.price}}</p>
+    <app-cart></app-cart>
+  </ng-container>
+</div>

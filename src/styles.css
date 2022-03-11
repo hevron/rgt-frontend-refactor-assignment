@@ -1,0 +1,192 @@
+@import url("https://use.fontawesome.com/releases/v5.0.7/css/all.css"); /* Using a url */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #000;
+  --border-color: #2f2f2f;
+}
+
+.b {
+  border: 1px solid red;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto !important;
+}
+
+/* layout system */
+.container {
+  flex-wrap: wrap;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+.row.x-space {
+  justify-content: space-around;
+}
+
+.row.x-center {
+  justify-content: center
+}
+
+.row.y-space {
+  align-items: space-around;
+}
+
+.row.y-center {
+  align-items: center
+}
+
+.col {
+  display: -webkit-flex;
+  display: flex;
+  padding: 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.col.auto {
+  width: fit-content !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.but{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: 0;
+}
+
+.c1 {
+  -webkit-flex: calc(1/12);
+  -ms-flex: calc(1/12);
+  flex: calc(1/12);
+}
+
+.c2 {
+  -webkit-flex: calc(2/12);
+  -ms-flex: calc(2/12);
+  flex: calc(2/12);
+}
+
+.c3 {
+  -webkit-flex: calc(3/12);
+  -ms-flex: calc(3/12);
+  flex: calc(3/12);
+}
+
+.c4 {
+  -webkit-flex: calc(4/12);
+  -ms-flex: calc(4/12);
+  flex: calc(4/12);
+}
+
+.c5 {
+  -webkit-flex: calc(5/12);
+  -ms-flex: calc(5/12);
+  flex: calc(5/12);
+}
+
+.c6 {
+  -webkit-flex: calc(6/12);
+  -ms-flex: calc(6/12);
+  flex: calc(6/12);
+}
+
+.c7 {
+  -webkit-flex: calc(7/12);
+  -ms-flex: calc(7/12);
+  flex: calc(7/12);
+}
+
+.c8 {
+  -webkit-flex: calc(8/12);
+  -ms-flex: calc(8/12);
+  flex: calc(8/12);
+}
+
+.c9 {
+  -webkit-flex: calc(9/12);
+  -ms-flex: calc(9/12);
+  flex: calc(9/12);
+}
+
+.c10 {
+  -webkit-flex: calc(10/12);
+  -ms-flex: calc(10/12);
+  flex: calc(10/12);
+}
+
+.c11 {
+  -webkit-flex: calc(11/12);
+  -ms-flex: calc(11/12);
+  flex: calc(11/12);
+}
+
+.c12 {
+  -webkit-flex: calc(12/12);
+  -ms-flex: calc(12/12);
+  flex: calc(12/12);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.full, .row {
+  width: 100%;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* general styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+.text-center{
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

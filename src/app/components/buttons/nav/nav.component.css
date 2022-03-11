@@ -1,0 +1,10 @@
+a {
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+a:hover, .active {
+  background-color: #111;
+}
